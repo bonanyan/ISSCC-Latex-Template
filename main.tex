@@ -1,0 +1,110 @@
+% Do NOT use equations!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,letterpaper]{article} % 12pt font size and letter paper size
+
+% packages
+\usepackage{setspace}       % For line spacing
+\usepackage{geometry}       % For setting page margins
+\usepackage{fontspec}       % For using system fonts (XeLaTeX/LuaLaTeX)
+\usepackage{parskip}        % To remove paragraph indentation
+\usepackage{cite}           % For managing citations in IEEE style
+\usepackage{graphicx}       % For including images
+\usepackage{comment}
+
+\pagestyle{empty}           % Remove page numbers
+
+% fonts
+% \setmainfont[Path = font/,
+% Filename = arialnarrow.ttf, 
+% Extension = .ttf,
+% BoldFont = arialnarrow-bold.ttf,
+% ItalicFont = arialnarrow-italic.ttf,
+% BoldItalicFont= arialnarrow-bolditalic.ttf
+% ]{arialnarrow}
+\setmainfont[Path = font/,
+Extension = .ttf,
+UprightFont=arialnarrow.ttf, 
+BoldFont = arialnarrow-bold.ttf,
+ItalicFont = arialnarrow-italic.ttf,
+BoldItalicFont= arialnarrow-bolditalic.ttf
+]{arialnarrow}
+% page margins
+\geometry{left=1in, right=1in, top=1in, bottom=1in}
+% line space
+\setstretch{2} % Double spacing
+% paragraph spacing
+\setlength{\parskip}{0pt plus 0pt minus 0pt}
+
+%comments
+
+\begin{document}
+
+% ---- frequently used symbol ----
+\begin{comment}
+%# Symbols:
+times ×:	{\char"D7}
+degree °:	{\char"B0}
+tilda ~:	{\char"7E}
+
+%# Greek alphabets:
+alpha ⍺:	{\char"3B1}
+beta β:		{\char"3B2}
+gamma γ:	{\char"3B3}
+theta θ:	{\char"3B8}
+omega ⍵:	{\char"3C9}
+
+%# Units:
+degree celsius ℃:  {\char"B0}C
+degree fahrenheit: {\char"B0}F
+Ohm Ω: {\char"3A9}
+
+再找不到就去这里找！
+https://unicodelookup.com
+\end{comment}
+%---------------------------------------
+
+\textbf{Title Here: 12-14words}
+
+[Placeholder for Author List]
+
+[Placeholder for Affiliations]
+
+Background~\cite{by22}. Fig.~1 shows XXX
+
+To address these challenges, this work presents XXX
+
+Fig.~2 shows XXX
+
+Fig.~3 shows XXX
+
+Fig.~4 shows XXX
+
+Fig.~5 shows XXX
+
+Fig.~6 shows XXX
+
+Fig.~7 shows XXX
+
+
+\clearpage
+\bibliographystyle{IEEEtran}
+\bibliography{ref}
+
+
+% ---- Other info needed ----
+\begin{comment}
+
+# Authors:
+Bonan Yan , Peking University, bonanyan@pku.edu.cn
+
+# Abstract (≤500 characters, including space/symbols)
+blabla
+
+# 1-Sentence Highlighter
+This work presents the first XXX, achieving 1000TOPS/W.
+
+
+\end{comment}
+%---------------------------------------
+\end{document}
+
